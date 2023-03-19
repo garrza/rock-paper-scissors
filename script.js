@@ -5,7 +5,7 @@ let computerWins = 0;
 // computer choice function
 function getComputerChoice() {
     let pickOne = ["rock", "paper", "scissors"];
-    let randomOne = pickOne[Math.floor(Math.random() * pickOne.length)];
+    let randomOne = pickOne[Math.floor(Math.random() * 3)];
     return randomOne;
 }
 
@@ -53,7 +53,6 @@ const playAgain = document.querySelector('#playAgain');
 playAgain.disabled = true;
 function playGame(pick) {
     computerSelection = getComputerChoice();
-
     resultRound.textContent = playRound(pick, computerSelection);
 
     humanScore.textContent = playerWins;
