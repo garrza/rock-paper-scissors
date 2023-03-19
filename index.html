@@ -2,14 +2,36 @@
 <html lang="en">
 
 <head>
-    <meta charset="uft-8">
-    <title>R-P-S</title>
-    <link href="style.css" rel="stylesheet">
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>RPS</h1>
-    <script src="script.js"></script>
+  <div class="mainBody">
+    <h1>Which choice will be taken?</h1>
+    <div class="btnContainer">
+      <input type="image" class="options" id="rock" src="images/rock.png">
+      <input type="image" class="options" id="paper" src="images/paper.png">
+      <input type="image" class="options" id="scissors" src="images/scissors.jpg">
+    </div>
+
+    <div class="resultContainer">
+      <p>Do you think you can win?</p>
+      <p id="resultRound"></p>
+      <p id="resultGame"></p>
+    </div>
+
+    <div class="scoreContainer">
+      <div class="robot">
+        <p id="robotScore">Computer 0</p>
+      </div>
+      <div class="human">
+        <p id="humanScore">Human 0</p>
+      </div>
+    </div>
+    <button type="button" class="optionsAfterGame" id="playAgain">Play again?</button>
+  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
